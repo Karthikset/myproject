@@ -16,9 +16,7 @@ on:
 jobs:
   build:
 
-    runs-on: ${{matrix.os}}
-      matrix: 
-      os: [ubuntu-latest, windoes-latest, macos-latest]
+    runs-on: $[ubuntu-latest, windoes-latest, macos-latest]
 
     steps:
     - uses: actions/checkout@v2
